@@ -1,0 +1,30 @@
+header nav a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: mediumpurple; /* Cor azul para os links no header */
+  padding: 5px; /* Espaço interno ao redor do texto */
+  margin-right: 10px;
+}
+header {
+  background-color: #E6E6FA;
+}
+main{
+  background-color: mediumpurple;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer {
+  background-color: #132;
+  color: lightcoral;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+body {
+  background-color: #E6E6FA; /* Substitua pelo código de cor desejado */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
