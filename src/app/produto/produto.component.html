@@ -1,0 +1,46 @@
+<div>
+
+  <h1>Cadastro de Produto</h1>
+
+<form [formGroup]="produtoForm" (ngSubmit)="cadastrarProduto()">
+  <div>
+    <label for="codigoDeBarras">Código de Barras:</label>
+    <input id="codigoDeBarras" formControlName="codigoDeBarras" type="text" />
+    <div *ngIf="produtoForm.get('codigoDeBarras')?.invalid && produtoForm.get('codigoDeBarras')?.touched">
+      <small>O código de barras é obrigatório.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="nome">Nome:</label>
+    <input id="nome" formControlName="nome" type="text" />
+    <div *ngIf="produtoForm.get('nome')?.invalid && produtoForm.get('nome')?.touched">
+      <small>O nome é obrigatório.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" formControlName="descricao"></textarea>
+    <div *ngIf="produtoForm.get('descricao')?.invalid && produtoForm.get('descricao')?.touched">
+      <small>A descrição é obrigatória.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="quantidade">Quantidade:</label>
+    <input id="quantidade" formControlName="quantidade" type="number" />
+    <div *ngIf="produtoForm.get('quantidade')?.invalid && produtoForm.get('quantidade')?.touched">
+      <small>A quantidade é obrigatória e deve ser maior que zero.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="observacao">Observação:</label>
+    <input id="observacao" formControlName="observacao" type="text" />
+  </div>
+
+  <button type="submit" [disabled]="produtoForm.invalid">Cadastrar Produto</button>
+</form>
+
+</div>

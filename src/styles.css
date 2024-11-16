@@ -1,1 +1,7 @@
+body {
+  background-color: #E6E6FA; /* Substitua pelo código de cor desejado */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
 /* You can add global styles to this file, and also import other style files */

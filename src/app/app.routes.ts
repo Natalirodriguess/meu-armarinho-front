@@ -6,7 +6,7 @@ export const routes: Routes = [
     loadComponent: () => import('./app.component').then(m => m.AppComponent)
   },
   {
-    path: 'secundaria',
-    loadComponent: () => import('./pg-secundaria/pg-secundaria.component').then(m => m.PgSecundariaComponent)
+    path: 'produto',
+    loadComponent: () => import('./produto/produto.component').then(m => m.ProdutoComponent)
   }
 ];
